@@ -1,5 +1,5 @@
 import jwt from 'jsonwebtoken'
-import { User } from "entities/user.entity";
+import { User } from '@entities/user.entity';
 import { JWT_SECRET } from '../config';
 
 export const createJWT = (user: User) => {

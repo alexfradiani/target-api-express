@@ -9,6 +9,7 @@
     "build": "tsc",
     "start": "node -r tsconfig-paths/register -r ts-node/register ./dist/app.js",
     "typeorm": "ts-node ./node_modules/typeorm/cli.js",
+    "lint": "eslint 'src/**/*.ts' --quiet --fix",
     "test": "ENVIRONMENT=test jest",
     "db:setup": "yarn schema:sync && yarn seed:run",
     "db:reset": "yarn schema:drop && yarn db:setup",

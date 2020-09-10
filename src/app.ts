@@ -6,9 +6,9 @@ import AdminBro from 'admin-bro';
 //TODO: Check how to change this to TS import
 const AdminBroExpress = require('@admin-bro/express');
 import { Database, Resource } from '@admin-bro/typeorm';
-import authorizationChecker from '@middleware/auth.middleware';
+import authorizationChecker from '@middlewares/auth.middleware';
 
-import { PORT } from "./config";
+import { PORT } from './config';
 import { User } from '@entities/user.entity';
 
 // set container before any operation you do with routing-controllers
