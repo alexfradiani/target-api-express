@@ -1,7 +1,9 @@
 import * as dotenv from 'dotenv';
 
-const envFile = process.env.ENVIRONMENT ? `.env.${process.env.ENVIRONMENT}` : '.env'
-dotenv.config({ path: envFile })
+const envFile = process.env.ENVIRONMENT
+  ? `.env.${process.env.ENVIRONMENT}`
+  : '.env';
+dotenv.config({ path: envFile });
 
 // If .env wasn't provided then exit
 if (!process.env.PORT) {

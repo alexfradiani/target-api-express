@@ -31,6 +31,8 @@ Run `yarn seed:run` to run seed files.
 
 Run `yarn db:reset` to drop schema and re run it, then seed the DB.
 
+Run `yarn register` to register the paths set at tsconfig.
+
 ## App scaffolding
 
 This is the suggested scaffolding for this project. You can take a look at:
@@ -66,6 +68,7 @@ This is the suggested scaffolding for this project. You can take a look at:
 - [typeorm](https://typeorm.io/#/) - NodeJS ORM.
 - [nodemon](https://nodemon.io/) - Utility that will monitor for any changes in your source and automatically restart your server.
 - [multer](https://github.com/expressjs/multer) -  NodeJS middleware for handling multipart/form-data.
+- [tsconfig-paths](https://github.com/dividab/tsconfig-paths#readme) - Utility to register relative paths set at tsconfig file
 
 ## Deployment with docker
 

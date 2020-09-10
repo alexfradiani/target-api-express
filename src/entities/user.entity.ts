@@ -1,5 +1,5 @@
-import { Entity, Column, BeforeInsert } from "typeorm";
-import { IsEmail, IsNotEmpty, validateOrReject } from "class-validator";
+import { Entity, Column, BeforeInsert } from 'typeorm';
+import { IsEmail, IsNotEmpty, validateOrReject } from 'class-validator';
 import { genSaltSync, hashSync, compareSync } from 'bcrypt';
 import { Base } from './base.entity';
 
